@@ -54,6 +54,7 @@ module registerfile_tb;
         rst_n = 1;
         #10;
 
+        // test writing to register 10 and then reading from both ports simultaneously
         @(negedge clk);
         wr_en = 1;
         wr_port_data = 32'hDEADBEEF;
